@@ -41444,3 +41444,17 @@ h1.snippet {
     height: auto;
 }
 
+
+.button8 {
+    position: relative;
+    z-index: 1;
+    border: 2px solid #fff;
+    color: #fff;
+}
+  .button8:focus {
+    color: #222; 
+}
+  .button8:hover {
+    border: 2px solid #2CD892;
+    color: #2CD892; 
+}
