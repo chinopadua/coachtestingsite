@@ -92,64 +92,54 @@
       </section>
 
       <section id="slider">
-         <!-- reference examples at https://www.idangero.us/swiper/demos/#.Vl8kD9-rRHc -->
-         <!-- Swiper -->
-         <div class="swiper-container">
-           <div class="swiper-wrapper">
-            <!-- 1st Video Slide -->   
-               <div id="slide_one" class="swiper-slide">
-                  
-                  <!-- end #lab_overlay -->
-               <!-- VIDEO -->
-                  <video class="slider-video" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;" poster="static/img/city.jpg">
-                     <source src="static/vid/city.mp4" type="video/mp4">
-                     <source src="static/vid/city.webm" type="video/webm">
-                     <source src="static/vid/city.ogv" type="video/ogg">
-                  </video>
-                  <!-- END VIDEO -->
-               </div>
-               <div id="lab_video_text_overlay">
-                     <div class="item-caption">
-                        <div class="container"><h1 itemprop="headline">COACH Approach®</h1>
-                           <p>Transform your organization in less than a year in a program that pays for itself</p>
-                        </div>   
-                     </div>
-                  </div>
+         <div class="carousel slide carousel-fade" data-ride="carousel" id="carousel-example-generic">
+            <ol class="carousel-indicators">
+               <li class="active" data-slide-to="0" data-target="#carousel-example-generic"></li>
+               <li data-slide-to="1" data-target="#carousel-example-generic" class=""></li>
+            </ol>
 
-            <!-- 2nd Video Slide -->   
-               <div id="slide_two" class="swiper-slide">
-                  <video class="slider-video" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;" poster="static/img/snow.jpg">
+            <div class="carousel-inner" role="listbox">
+
+               <div itemprop="primaryImageOfPage" class="item active">
+                  <video class="videobg" preload="auto" loop="" autoplay="" poster="static/img/snow.jpg">
                      <source src="static/vid/snow.mp4" type="video/mp4">
-                     <source src="static/vid/snow.webm" type="video/webm">    
+                     <source src="static/vid/snow.webm" type="video/webm">
                   </video>
-
-                  <div id="lab_video_text_overlay">
+                  <div class="overlay"></div>
+                  <div id="video-text-overlay">
                      <div class="container">
-                        <h2>Lorum Ipsum Deloras </h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc molestie</p>
-                        <a href="#" class="btn btn-default">View Our Work</a>
-                        <a href="#" class="btn btn-warning">Learn About Us</a>
+                        <h2 class="wow fadeIn landingtexth2" data-wow-duration="5s" style="visibility: hidden; animation-duration: 4s">COACH Approach®</h2>
+                        <p class="wow fadeIn landingtexth2" data-wow-duration="5s" style="visibility: hidden; animation-duration: 4s">Transform your organization in less than a year in a program that pays for itself</p>
                      </div>
                   </div>
-                  <!-- end #lab_overlay -->
-                  
                </div>
-
-               <div id="slide_three" class="swiper-slide">
-                  <!-- VIDEO -->
-                  <video class="slider-video" preload="auto" loop="" autoplay="" style="visibility: visible; width: 100%;" poster="static/img/carlight.jpg">
-                     <source src="static/vid/carlights.mp4" type="video/mp4">
-                     <source src="static/vid/carlights.webm" type="video/webm">  
+               
+               <div class="item">
+                  <video class="videobg" preload="auto" loop="" autoplay="" poster="static/img/carlight.jpg">
+                     <source src="static/vid/carlight.mp4" type="video/mp4">
+                     <source src="static/vid/carlight.webm" type="video/webm"> 
                   </video>
-                  <!-- END VIDEO -->
+                  <div class="overlay"></div>
+                  <div id="video-text-overlay2">
+                     <div class="container">
+                        <div class="row align-middle">
+                        <div class="col-md-5 col-md-offset-2">
+                           <div class="container">
+                              <h2 class="wow fadeInLeftBig landingtexth2" data-wow-duration="1s" style="visibility: hidden; animation-duration: 1s">COST REDUCTION</h2>
+                              <h2 class="wow fadeInLeftBig landingtexth2" data-wow-duration="1.6s" style="visibility: hidden; animation-duration: 1s">INCREASED CAPACITY</h2>
+                              <h2 class="wow fadeInLeftBig landingtexth2" data-wow-duration="2.2s" style="visibility: hidden; animation-duration: 1s">INCREASED PROFIT</h2>
+                           </div>
+                        </div>
+                        <div class="col-md-3">
+                           <p>Everyone in your organization will benefit from your collaboration with COACH</p>
+                           <a href="clients" class="btn btn-default">View our Clients</a>
+                        </div>
+                        </div>
+                     </div>
+                  </div>
                </div>
-
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination"></div>
-            <!-- Add Arrows -->
          </div>
-
       </section>
 
       <section id="about">
@@ -336,27 +326,6 @@
         ga('send', 'pageview');
       </script>
 
-      
-
-      <!-- Initialize Swiper -->
-      <script>
-        var swiper = new Swiper('.swiper-container', {
-      spaceBetween: 30,
-      centeredSlides: true,
-      autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-      </script>
 
    </body>
 </html>
