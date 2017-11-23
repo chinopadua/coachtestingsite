@@ -1207,7 +1207,6 @@ p {
     .lead {
 
         font-size: 19.5px
-
     }
 
 }
@@ -40980,9 +40979,9 @@ fieldset[disabled] .btn-white.active {
 
     transition-property: opacity;
 
-    -webkit-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.2s;
 
-    transition-duration: 0.4s;
+    transition-duration: 0.2s;
 
     height: 100%;
 
@@ -41335,10 +41334,6 @@ h1.snippet {
 /* Video BG *//* Video BG *//* Video BG *//* Video BG *//* Video BG *//* Video BG */
 /* Video BG *//* Video BG *//* Video BG *//* Video BG *//* Video BG *//* Video BG */
 /* Video BG *//* Video BG *//* Video BG *//* Video BG *//* Video BG *//* Video BG */
-.swiper-container {
-  width: 100%;
-  height: 100%;
-}
 
 .swiper-slide {
   text-align: center;
@@ -41361,62 +41356,91 @@ h1.snippet {
 }
 
 /* Text Overlay */
-#lab_video_text_overlay h2 {
-  font-size:4em
-}
 
-#lab_video_text_overlay .btn {
+
+#video-text-overlay .btn {
   border-radius:0;
   text-transform:uppercase;
   font-weight:200;
 }
-#lab_video_text_overlay .btn-warning {
+#video-text-overlay .btn-warning {
   background-color:#F5D328;
 }
 
-#lab_video_text_overlay {
+#video-text-overlay {
   position: absolute;
   color: #FFF;
-  width: 90%;
-  top: 46%;
+  width: 100%;
+  top: 42%;
 }
 
-#lab_video_text_overlay .container {
+#video-text-overlay p{
+  font-size: 1em;
+}
+
+/*PAGE 2 of SLIDESHOW*/
+#video-text-overlay2 {
+  position: absolute;
+  color: #FFF;
+  width: 100%;
+  top: 30%;
+}
+
+.landingtexth2 {
+    font-size: 1.5em; 
+}
+
+#video-text-overlay2 h2 {
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+
+#video-text-overlay .container {
   text-align: center;
   margin: 0px auto;
 //  background-color: #669900;
 }
 
-@media screen and (max-width:991px) {
-  #lab_video_text_wrap {
-    height: 300px;
-  }
+@media (min-width: 768px) {
+
+    #video-text-overlay h2 {
+      font-size: 3em
+    }
+
+    .landingtexth2 {
+    font-size: 2em; 
+    }
+
+    #video-text-overlay2 h2 {
+        margin-top: 0;
+        margin-bottom: 1em;
+    }
+
+    #video-text-overlay2 {
+      position: absolute;
+      color: #FFF;
+      width: 100%;
+      top: 40%;
+    }
+
 }
 
-@media screen and (max-width:650px) {
-  #lab_video_text_wrap {
-    height: 250px;
-  }
-  #lab_video_text_overlay h2 {
-    font-size: 2em;
-  }
-  #lab_video_text_overlay p {
-    font-size: .9em;
-  }
-}
 
 .overlay {
 
     background-color: rgba(0, 0, 0, 0.5);
-
     position: absolute;
-
     top: 0;
-
     left: 0;
-
     width: 100%;
-
     height: 100%
-
 }
+
+
+.videobg {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+}
+
